@@ -1,26 +1,4 @@
-//Item Interface
-    public interface Item{  
-        boolean less(Item v);  
-    }  
----------------------------------------------------------
-//Create class for single Item
-    public class MyItem implements Item{  
-        private int key;  
-        public boolean less(Item v){  
-            return key < ((MyItem)v).key;  
-        }  
-        public void read(){  
-            key = new Random().nextInt();  
-        }  
-        public void rand(){  
-            key = (int)(1000 * Math.random());  
-        }  
-        public String toString(){  
-            return key + "";  
-        }  
-    }  
----------------------------------------------------------
-//Main Doc.
+//selection algorithm
     public class Selection {  
       
         public static void main(String[] args) {  
